@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 3.22.1
-Release  : 1
+Release  : 2
 URL      : http://ftp.gnome.org/pub/GNOME/sources/gedit/3.22/gedit-3.22.1.tar.xz
 Source0  : http://ftp.gnome.org/pub/GNOME/sources/gedit/3.22/gedit-3.22.1.tar.xz
 Summary  : gedit
@@ -39,6 +39,7 @@ BuildRequires : pkgconfig(libsoup-2.4)
 BuildRequires : pkgconfig(libxml-2.0)
 BuildRequires : pkgconfig(pygobject-3.0)
 BuildRequires : pkgconfig(x11)
+Patch1: cve-2017-14108.nopatch
 
 %description
 General Information
@@ -126,7 +127,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1511910764
+export SOURCE_DATE_EPOCH=1512770731
+export CFLAGS="$CFLAGS -fstack-protector-strong "
+export FCFLAGS="$CFLAGS -fstack-protector-strong "
+export FFLAGS="$CFLAGS -fstack-protector-strong "
+export CXXFLAGS="$CXXFLAGS -fstack-protector-strong "
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -138,7 +143,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1511910764
+export SOURCE_DATE_EPOCH=1512770731
 rm -rf %{buildroot}
 %make_install
 %find_lang gedit

@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 3.22.1
-Release  : 3
+Release  : 4
 URL      : http://ftp.gnome.org/pub/GNOME/sources/gedit/3.22/gedit-3.22.1.tar.xz
 Source0  : http://ftp.gnome.org/pub/GNOME/sources/gedit/3.22/gedit-3.22.1.tar.xz
 Summary  : gedit

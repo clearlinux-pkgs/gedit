@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 3.22.1
-Release  : 6
+Release  : 7
 URL      : http://ftp.gnome.org/pub/GNOME/sources/gedit/3.22/gedit-3.22.1.tar.xz
 Source0  : http://ftp.gnome.org/pub/GNOME/sources/gedit/3.22/gedit-3.22.1.tar.xz
 Summary  : gedit
@@ -127,7 +127,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1517632888
+export SOURCE_DATE_EPOCH=1517682565
 export CFLAGS="$CFLAGS -fstack-protector-strong "
 export FCFLAGS="$CFLAGS -fstack-protector-strong "
 export FFLAGS="$CFLAGS -fstack-protector-strong "
@@ -143,7 +143,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1517632888
+export SOURCE_DATE_EPOCH=1517682565
 rm -rf %{buildroot}
 %make_install
 %find_lang gedit

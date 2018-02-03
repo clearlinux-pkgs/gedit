@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 3.22.1
-Release  : 5
+Release  : 6
 URL      : http://ftp.gnome.org/pub/GNOME/sources/gedit/3.22/gedit-3.22.1.tar.xz
 Source0  : http://ftp.gnome.org/pub/GNOME/sources/gedit/3.22/gedit-3.22.1.tar.xz
 Summary  : gedit
@@ -127,13 +127,13 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1512771141
+export SOURCE_DATE_EPOCH=1517632888
 export CFLAGS="$CFLAGS -fstack-protector-strong "
 export FCFLAGS="$CFLAGS -fstack-protector-strong "
 export FFLAGS="$CFLAGS -fstack-protector-strong "
 export CXXFLAGS="$CXXFLAGS -fstack-protector-strong "
 %configure --disable-static
-make V=1  %{?_smp_mflags}
+make  %{?_smp_mflags}
 
 %check
 export LANG=C
@@ -143,7 +143,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1512771141
+export SOURCE_DATE_EPOCH=1517632888
 rm -rf %{buildroot}
 %make_install
 %find_lang gedit
@@ -154,77 +154,78 @@ rm -rf %{buildroot}
 /usr/lib64/gedit/plugins/docinfo.plugin
 /usr/lib64/gedit/plugins/externaltools.plugin
 /usr/lib64/gedit/plugins/externaltools/__init__.py
-/usr/lib64/gedit/plugins/externaltools/__init__.pyc
+/usr/lib64/gedit/plugins/externaltools/__pycache__/__init__.cpython-36.pyc
+/usr/lib64/gedit/plugins/externaltools/__pycache__/appactivatable.cpython-36.pyc
+/usr/lib64/gedit/plugins/externaltools/__pycache__/capture.cpython-36.pyc
+/usr/lib64/gedit/plugins/externaltools/__pycache__/filelookup.cpython-36.pyc
+/usr/lib64/gedit/plugins/externaltools/__pycache__/functions.cpython-36.pyc
+/usr/lib64/gedit/plugins/externaltools/__pycache__/library.cpython-36.pyc
+/usr/lib64/gedit/plugins/externaltools/__pycache__/linkparsing.cpython-36.pyc
+/usr/lib64/gedit/plugins/externaltools/__pycache__/manager.cpython-36.pyc
+/usr/lib64/gedit/plugins/externaltools/__pycache__/outputpanel.cpython-36.pyc
+/usr/lib64/gedit/plugins/externaltools/__pycache__/windowactivatable.cpython-36.pyc
 /usr/lib64/gedit/plugins/externaltools/appactivatable.py
-/usr/lib64/gedit/plugins/externaltools/appactivatable.pyc
 /usr/lib64/gedit/plugins/externaltools/capture.py
-/usr/lib64/gedit/plugins/externaltools/capture.pyc
 /usr/lib64/gedit/plugins/externaltools/filelookup.py
-/usr/lib64/gedit/plugins/externaltools/filelookup.pyc
 /usr/lib64/gedit/plugins/externaltools/functions.py
-/usr/lib64/gedit/plugins/externaltools/functions.pyc
 /usr/lib64/gedit/plugins/externaltools/library.py
-/usr/lib64/gedit/plugins/externaltools/library.pyc
 /usr/lib64/gedit/plugins/externaltools/linkparsing.py
-/usr/lib64/gedit/plugins/externaltools/linkparsing.pyc
 /usr/lib64/gedit/plugins/externaltools/manager.py
-/usr/lib64/gedit/plugins/externaltools/manager.pyc
 /usr/lib64/gedit/plugins/externaltools/outputpanel.py
-/usr/lib64/gedit/plugins/externaltools/outputpanel.pyc
 /usr/lib64/gedit/plugins/externaltools/windowactivatable.py
-/usr/lib64/gedit/plugins/externaltools/windowactivatable.pyc
 /usr/lib64/gedit/plugins/filebrowser.plugin
 /usr/lib64/gedit/plugins/modelines.plugin
 /usr/lib64/gedit/plugins/pythonconsole.plugin
 /usr/lib64/gedit/plugins/pythonconsole/__init__.py
-/usr/lib64/gedit/plugins/pythonconsole/__init__.pyc
+/usr/lib64/gedit/plugins/pythonconsole/__pycache__/__init__.cpython-36.pyc
+/usr/lib64/gedit/plugins/pythonconsole/__pycache__/config.cpython-36.pyc
+/usr/lib64/gedit/plugins/pythonconsole/__pycache__/console.cpython-36.pyc
 /usr/lib64/gedit/plugins/pythonconsole/config.py
-/usr/lib64/gedit/plugins/pythonconsole/config.pyc
 /usr/lib64/gedit/plugins/pythonconsole/console.py
-/usr/lib64/gedit/plugins/pythonconsole/console.pyc
 /usr/lib64/gedit/plugins/quickopen.plugin
 /usr/lib64/gedit/plugins/quickopen/__init__.py
-/usr/lib64/gedit/plugins/quickopen/__init__.pyc
+/usr/lib64/gedit/plugins/quickopen/__pycache__/__init__.cpython-36.pyc
+/usr/lib64/gedit/plugins/quickopen/__pycache__/popup.cpython-36.pyc
+/usr/lib64/gedit/plugins/quickopen/__pycache__/virtualdirs.cpython-36.pyc
 /usr/lib64/gedit/plugins/quickopen/popup.py
-/usr/lib64/gedit/plugins/quickopen/popup.pyc
 /usr/lib64/gedit/plugins/quickopen/virtualdirs.py
-/usr/lib64/gedit/plugins/quickopen/virtualdirs.pyc
 /usr/lib64/gedit/plugins/snippets.plugin
 /usr/lib64/gedit/plugins/snippets/__init__.py
-/usr/lib64/gedit/plugins/snippets/__init__.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/__init__.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/appactivatable.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/completion.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/document.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/exporter.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/helper.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/importer.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/languagemanager.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/library.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/manager.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/parser.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/placeholder.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/shareddata.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/signals.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/singleton.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/snippet.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/substitutionparser.cpython-36.pyc
+/usr/lib64/gedit/plugins/snippets/__pycache__/windowactivatable.cpython-36.pyc
 /usr/lib64/gedit/plugins/snippets/appactivatable.py
-/usr/lib64/gedit/plugins/snippets/appactivatable.pyc
 /usr/lib64/gedit/plugins/snippets/completion.py
-/usr/lib64/gedit/plugins/snippets/completion.pyc
 /usr/lib64/gedit/plugins/snippets/document.py
-/usr/lib64/gedit/plugins/snippets/document.pyc
 /usr/lib64/gedit/plugins/snippets/exporter.py
-/usr/lib64/gedit/plugins/snippets/exporter.pyc
 /usr/lib64/gedit/plugins/snippets/helper.py
-/usr/lib64/gedit/plugins/snippets/helper.pyc
 /usr/lib64/gedit/plugins/snippets/importer.py
-/usr/lib64/gedit/plugins/snippets/importer.pyc
 /usr/lib64/gedit/plugins/snippets/languagemanager.py
-/usr/lib64/gedit/plugins/snippets/languagemanager.pyc
 /usr/lib64/gedit/plugins/snippets/library.py
-/usr/lib64/gedit/plugins/snippets/library.pyc
 /usr/lib64/gedit/plugins/snippets/manager.py
-/usr/lib64/gedit/plugins/snippets/manager.pyc
 /usr/lib64/gedit/plugins/snippets/parser.py
-/usr/lib64/gedit/plugins/snippets/parser.pyc
 /usr/lib64/gedit/plugins/snippets/placeholder.py
-/usr/lib64/gedit/plugins/snippets/placeholder.pyc
 /usr/lib64/gedit/plugins/snippets/shareddata.py
 /usr/lib64/gedit/plugins/snippets/signals.py
-/usr/lib64/gedit/plugins/snippets/signals.pyc
 /usr/lib64/gedit/plugins/snippets/singleton.py
-/usr/lib64/gedit/plugins/snippets/singleton.pyc
 /usr/lib64/gedit/plugins/snippets/snippet.py
-/usr/lib64/gedit/plugins/snippets/snippet.pyc
 /usr/lib64/gedit/plugins/snippets/substitutionparser.py
-/usr/lib64/gedit/plugins/snippets/substitutionparser.pyc
 /usr/lib64/gedit/plugins/snippets/windowactivatable.py
-/usr/lib64/gedit/plugins/snippets/windowactivatable.pyc
 /usr/lib64/gedit/plugins/sort.plugin
 /usr/lib64/gedit/plugins/spell.plugin
 /usr/lib64/gedit/plugins/time.plugin

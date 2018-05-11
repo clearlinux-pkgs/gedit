@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 3.28.1
-Release  : 10
+Release  : 11
 URL      : https://download.gnome.org/sources/gedit/3.28/gedit-3.28.1.tar.xz
 Source0  : https://download.gnome.org/sources/gedit/3.28/gedit-3.28.1.tar.xz
 Summary  : gedit
@@ -127,11 +127,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523280387
-export CFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs "
-export FCFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs "
-export FFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs "
-export CXXFLAGS="$CXXFLAGS -fstack-protector-strong -mzero-caller-saved-regs "
+export SOURCE_DATE_EPOCH=1526058980
+export CFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
+export FCFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
+export FFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
+export CXXFLAGS="$CXXFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -143,7 +143,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1523280387
+export SOURCE_DATE_EPOCH=1526058980
 rm -rf %{buildroot}
 %make_install
 %find_lang gedit

@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 3.28.1
-Release  : 11
+Release  : 12
 URL      : https://download.gnome.org/sources/gedit/3.28/gedit-3.28.1.tar.xz
 Source0  : https://download.gnome.org/sources/gedit/3.28/gedit-3.28.1.tar.xz
 Summary  : gedit

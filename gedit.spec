@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 3.28.1
-Release  : 18
+Release  : 19
 URL      : https://download.gnome.org/sources/gedit/3.28/gedit-3.28.1.tar.xz
 Source0  : https://download.gnome.org/sources/gedit/3.28/gedit-3.28.1.tar.xz
 Summary  : gedit
@@ -148,7 +148,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1530384622
+export SOURCE_DATE_EPOCH=1531203460
 export CFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
 export FCFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
 export FFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
@@ -164,7 +164,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1530384622
+export SOURCE_DATE_EPOCH=1531203460
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/gedit
 cp COPYING %{buildroot}/usr/share/doc/gedit/COPYING
@@ -178,16 +178,6 @@ cp win32/installer/COPYING.rtf %{buildroot}/usr/share/doc/gedit/win32_installer_
 /usr/lib64/gedit/plugins/docinfo.plugin
 /usr/lib64/gedit/plugins/externaltools.plugin
 /usr/lib64/gedit/plugins/externaltools/__init__.py
-/usr/lib64/gedit/plugins/externaltools/__pycache__/__init__.cpython-37.pyc
-/usr/lib64/gedit/plugins/externaltools/__pycache__/appactivatable.cpython-37.pyc
-/usr/lib64/gedit/plugins/externaltools/__pycache__/capture.cpython-37.pyc
-/usr/lib64/gedit/plugins/externaltools/__pycache__/filelookup.cpython-37.pyc
-/usr/lib64/gedit/plugins/externaltools/__pycache__/functions.cpython-37.pyc
-/usr/lib64/gedit/plugins/externaltools/__pycache__/library.cpython-37.pyc
-/usr/lib64/gedit/plugins/externaltools/__pycache__/linkparsing.cpython-37.pyc
-/usr/lib64/gedit/plugins/externaltools/__pycache__/manager.cpython-37.pyc
-/usr/lib64/gedit/plugins/externaltools/__pycache__/outputpanel.cpython-37.pyc
-/usr/lib64/gedit/plugins/externaltools/__pycache__/windowactivatable.cpython-37.pyc
 /usr/lib64/gedit/plugins/externaltools/appactivatable.py
 /usr/lib64/gedit/plugins/externaltools/capture.py
 /usr/lib64/gedit/plugins/externaltools/filelookup.py
@@ -201,38 +191,14 @@ cp win32/installer/COPYING.rtf %{buildroot}/usr/share/doc/gedit/win32_installer_
 /usr/lib64/gedit/plugins/modelines.plugin
 /usr/lib64/gedit/plugins/pythonconsole.plugin
 /usr/lib64/gedit/plugins/pythonconsole/__init__.py
-/usr/lib64/gedit/plugins/pythonconsole/__pycache__/__init__.cpython-37.pyc
-/usr/lib64/gedit/plugins/pythonconsole/__pycache__/config.cpython-37.pyc
-/usr/lib64/gedit/plugins/pythonconsole/__pycache__/console.cpython-37.pyc
 /usr/lib64/gedit/plugins/pythonconsole/config.py
 /usr/lib64/gedit/plugins/pythonconsole/console.py
 /usr/lib64/gedit/plugins/quickopen.plugin
 /usr/lib64/gedit/plugins/quickopen/__init__.py
-/usr/lib64/gedit/plugins/quickopen/__pycache__/__init__.cpython-37.pyc
-/usr/lib64/gedit/plugins/quickopen/__pycache__/popup.cpython-37.pyc
-/usr/lib64/gedit/plugins/quickopen/__pycache__/virtualdirs.cpython-37.pyc
 /usr/lib64/gedit/plugins/quickopen/popup.py
 /usr/lib64/gedit/plugins/quickopen/virtualdirs.py
 /usr/lib64/gedit/plugins/snippets.plugin
 /usr/lib64/gedit/plugins/snippets/__init__.py
-/usr/lib64/gedit/plugins/snippets/__pycache__/__init__.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/appactivatable.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/completion.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/document.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/exporter.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/helper.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/importer.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/languagemanager.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/library.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/manager.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/parser.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/placeholder.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/shareddata.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/signals.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/singleton.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/snippet.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/substitutionparser.cpython-37.pyc
-/usr/lib64/gedit/plugins/snippets/__pycache__/windowactivatable.cpython-37.pyc
 /usr/lib64/gedit/plugins/snippets/appactivatable.py
 /usr/lib64/gedit/plugins/snippets/completion.py
 /usr/lib64/gedit/plugins/snippets/document.py

@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 3.30.0
-Release  : 20
+Release  : 21
 URL      : https://download.gnome.org/sources/gedit/3.30/gedit-3.30.0.tar.xz
 Source0  : https://download.gnome.org/sources/gedit/3.30/gedit-3.30.0.tar.xz
 Summary  : gedit

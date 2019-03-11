@@ -1,3 +1,88 @@
+============
+gedit 3.32.0
+============
+
+- Translation updates
+
+=============
+gedit 3.31.92
+=============
+Development release
+
+- Fix segfault in open document selector (Sebastien)
+- Update help for app menu changes (Andre)
+- Miscellaneous fixes (Jeremy, Ken)
+
+Contributors:
+ Sebastien Bacher, Jeremy Bicha, Andre Klapper, Ken VanDine
+
+==============
+gedit 3.31.90
+==============
+Development release
+
+- Switch to meson (Martin)
+- Drop autotools support (Jeremy)
+- Add tests to validate AppStream metadata and .desktop (Bilal)
+- Flatpak and Snap versions now bundle gedit-plugins (Martin & Jeremy)
+- Fix some issues resulting from the GNOME 3.32 menu changes (Jeffery)
+- Drop gconf conversion file (Jeremy)
+- Miscellaneous fixes (Andre, Jeremy)
+
+Contributors:
+ Jeremy Bicha, Martin Blanchard, Bilal Elmoussaoui
+ Andre Klapper, Jeffery To
+
+=============
+gedit 3.31.3
+=============
+Development release
+
+- Update README and rename to README.md (Alexandre)
+- Update new app icon (Jakub)
+- Fix searching with upper case characters in recent files popup (Sébastien)
+- Fix symbolic icons in file browser with dark themes (Sébastien)
+- Use a color for search matching in recent files popup that works better
+  with dark themes (Sébastien)
+- Clean up deprecations and more (Sébastien)
+
+Contributors:
+ Alexandre Franke, Sébastien Lafargue, Jakub Steiner
+
+=============
+gedit 3.31.2
+=============
+Development release
+
+- Follow GNOME 3.32 menu guidelines (Corey)
+- Allow closing tabs with middle-click (Corey)
+
+Contributors: Corey Daley
+
+=============
+gedit 3.31.1
+=============
+Development release
+
+- Fix tarball and version number from previous release
+
+=============
+gedit 3.31.0
+=============
+Development release
+
+- Redesign the app icon (Jakub)
+- Migrate to gettext and stop using intltool (Martin)
+- Switch from gtksourceview3 to gtksourceview4 (Christian)
+- Fix file chooser not opening in correct location after first time
+  (Sebastien)
+- Miscellaneous build and translation fixes (Jeremy, Mathieu, Piotr)
+- Translation updates
+
+Contributors:
+ Jeremy Bicha, Martin Blanchard, Mathieu Bridon, Piotr Drąg, Christian Hergert,
+ Sebastien Lafargue, Jakub Steiner
+
 =============
 gedit 3.30.2
 =============

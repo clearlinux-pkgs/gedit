@@ -1,3 +1,9 @@
-3.30.2
+3.32.0
+appstream-glib
+gspell-dev
+gtk-doc-dev
+gtksourceview-dev
 itstool
+libpeas-dev
+libsoup-dev
 vala

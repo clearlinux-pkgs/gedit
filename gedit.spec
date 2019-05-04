@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 3.32.0
-Release  : 28
+Release  : 29
 URL      : https://download.gnome.org/sources/gedit/3.32/gedit-3.32.0.tar.xz
 Source0  : https://download.gnome.org/sources/gedit/3.32/gedit-3.32.0.tar.xz
 Summary  : GNOME Text Editor
@@ -156,12 +156,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552318375
-export LDFLAGS="${LDFLAGS} -fno-lto"
-export CFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
-export FCFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
-export FFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
-export CXXFLAGS="$CXXFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
+export SOURCE_DATE_EPOCH=1556999038
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -fcf-protection=full -ffat-lto-objects -flto=4 -fstack-protector-strong "
+export FCFLAGS="$CFLAGS -O3 -fcf-protection=full -ffat-lto-objects -flto=4 -fstack-protector-strong "
+export FFLAGS="$CFLAGS -O3 -fcf-protection=full -ffat-lto-objects -flto=4 -fstack-protector-strong "
+export CXXFLAGS="$CXXFLAGS -O3 -fcf-protection=full -ffat-lto-objects -flto=4 -fstack-protector-strong "
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --prefix /usr --buildtype=plain   builddir
 ninja -v -C builddir
 
@@ -277,6 +279,8 @@ DESTDIR=%{buildroot} ninja -C builddir install
 /usr/share/icons/hicolor/scalable/apps/org.gnome.gedit.svg
 /usr/share/icons/hicolor/symbolic/apps/org.gnome.gedit-symbolic.svg
 /usr/share/metainfo/org.gnome.gedit.appdata.xml
+/usr/share/vala/vapi/gedit.deps
+/usr/share/vala/vapi/gedit.vapi
 
 %files dev
 %defattr(-,root,root,-)

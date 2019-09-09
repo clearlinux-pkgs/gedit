@@ -1,3 +1,36 @@
+News in 3.34.0, 2019-09-09
+--------------------------
+* Translation updates.
+
+News in 3.33.92, 2019-09-03
+---------------------------
+* Documentation:
+ - Overhaul README.md and CONTRIBUTING.md (renamed from HACKING).
+ - Write several documents in Markdown in the docs/ directory:
+	- gedit development - getting started
+	- gedit installation by building the source code
+	- a new roadmap
+  (Sébastien Wilmet)
+* Updates to the Snap and Flatpak packages (Ken VanDine, Martin Blanchard)
+* Translation updates.
+
+=============
+gedit 3.33.90
+=============
+
+- Add "gedit" to .desktop keywords as search workaround for Flatpak
+  and Snap (Felipe)
+- Build fixes (Christopher, Jordi, Luca, Michael, Ting-Wei)
+- Translation updates
+
+Contributors:
+ Luca Bacci
+ Felipe Borges
+ Michael Catanzaro
+ Ting-Wei Lan
+ Jordi Mas
+ Christopher Reiter
+
 ============
 gedit 3.32.2
 ============

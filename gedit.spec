@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 3.34.1
-Release  : 33
+Release  : 34
 URL      : https://download.gnome.org/sources/gedit/3.34/gedit-3.34.1.tar.xz
 Source0  : https://download.gnome.org/sources/gedit/3.34/gedit-3.34.1.tar.xz
 Summary  : GNOME Text Editor

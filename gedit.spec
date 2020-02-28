@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 3.34.1
-Release  : 37
+Release  : 38
 URL      : https://download.gnome.org/sources/gedit/3.34/gedit-3.34.1.tar.xz
 Source0  : https://download.gnome.org/sources/gedit/3.34/gedit-3.34.1.tar.xz
 Summary  : GNOME Text Editor
@@ -152,7 +152,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582925712
+export SOURCE_DATE_EPOCH=1582929238
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar

@@ -1,15 +1,9 @@
-3.34.1
+3.36.1
 appstream-glib
 gspell-dev
-gtk-doc-dev
 gtksourceview-dev
-itstool
 libpeas-dev
-libsoup-dev
-meson
 pkgconfig(gspell-1)
-pkgconfig(gtk-doc)
 pkgconfig(gtksourceview-4)
 pkgconfig(libpeas-1.0)
-pkgconfig(libsoup-2.4)
-vala
+pkgconfig(tepl-4)

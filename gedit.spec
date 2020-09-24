@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 3.38.0
-Release  : 41
+Release  : 42
 URL      : https://download.gnome.org/sources/gedit/3.38/gedit-3.38.0.tar.xz
 Source0  : https://download.gnome.org/sources/gedit/3.38/gedit-3.38.0.tar.xz
 Summary  : No detailed summary available

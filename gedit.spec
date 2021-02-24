@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 3.38.1
-Release  : 48
+Release  : 49
 URL      : https://download.gnome.org/sources/gedit/3.38/gedit-3.38.1.tar.xz
 Source0  : https://download.gnome.org/sources/gedit/3.38/gedit-3.38.1.tar.xz
 Summary  : No detailed summary available
@@ -23,6 +23,7 @@ BuildRequires : appstream-glib
 BuildRequires : buildreq-gnome
 BuildRequires : buildreq-meson
 BuildRequires : gdk-pixbuf
+BuildRequires : gedit-plugins-gnome
 BuildRequires : gspell-dev
 BuildRequires : pkgconfig(gspell-1)
 BuildRequires : pkgconfig(libpeas-gtk-1.0)
@@ -144,7 +145,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1613407960
+export SOURCE_DATE_EPOCH=1614193183
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

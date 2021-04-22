@@ -1,3 +1,17 @@
+News in 40, 2021-03-19
+----------------------------
+* Remove all the deprecated API.
+* file-browser: drop use of confirm-trash
+* Translation updates.
+
+Tepl-ification:
+* Use tepl_pango_font_description_to_css().
+* Use TeplLanguageChooser's.
+* Use TeplProgressInfoBar.
+* Start to use TeplBuffer and TeplFile APIs.
+  As a result the new tabs are now named "Untitled File", not
+  "Untitled Document".
+
 News in 3.38.1, 2020-11-20
 --------------------------
 * AppData: change donation URL to Liberapay.

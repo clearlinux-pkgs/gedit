@@ -1,6 +1,7 @@
-40.1
+41.0
 appstream-glib
 gspell-dev
+gtksourceview-dev
 pkgconfig(gspell-1)
+pkgconfig(gtksourceview-4)
 pkgconfig(libpeas-gtk-1.0)
-pkgconfig(tepl-6)

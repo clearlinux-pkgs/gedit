@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 42.2
-Release  : 65
+Release  : 66
 URL      : https://download.gnome.org/sources/gedit/42/gedit-42.2.tar.xz
 Source0  : https://download.gnome.org/sources/gedit/42/gedit-42.2.tar.xz
 Summary  : No detailed summary available

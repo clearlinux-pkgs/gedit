@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 42.2
-Release  : 69
+Release  : 70
 URL      : https://download.gnome.org/sources/gedit/42/gedit-42.2.tar.xz
 Source0  : https://download.gnome.org/sources/gedit/42/gedit-42.2.tar.xz
 Summary  : No detailed summary available
@@ -144,7 +144,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1659111388
+export SOURCE_DATE_EPOCH=1666734228
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -156,16 +156,9 @@ export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto -fstack-protector-st
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --libdir=lib64 --prefix=/usr --buildtype=plain   builddir
 ninja -v -C builddir
 
-%check
-export LANG=C.UTF-8
-export http_proxy=http://127.0.0.1:9/
-export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost,127.0.0.1,0.0.0.0
-meson test -C builddir --print-errorlogs
-
 %install
 mkdir -p %{buildroot}/usr/share/package-licenses/gedit
-cp %{_builddir}/gedit-%{version}/COPYING %{buildroot}/usr/share/package-licenses/gedit/13d2034b5ee3cb8d1a076370cf8f0e344a5d0855
+cp %{_builddir}/gedit-%{version}/COPYING %{buildroot}/usr/share/package-licenses/gedit/13d2034b5ee3cb8d1a076370cf8f0e344a5d0855 || :
 DESTDIR=%{buildroot} ninja -C builddir install
 %find_lang gedit
 

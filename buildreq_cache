@@ -1,7 +1,9 @@
-42.2
+43.0
+amtk-dev
 appstream-glib
+docbook-xml
 gspell-dev
-gtksourceview-dev
+pkgconfig(amtk-5)
 pkgconfig(gspell-1)
-pkgconfig(gtksourceview-4)
 pkgconfig(libpeas-gtk-1.0)
+pkgconfig(tepl-6)

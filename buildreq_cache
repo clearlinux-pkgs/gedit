@@ -1,9 +1,0 @@
-43.1
-amtk-dev
-appstream-glib
-docbook-xml
-gspell-dev
-pkgconfig(amtk-5)
-pkgconfig(gspell-1)
-pkgconfig(libpeas-gtk-1.0)
-pkgconfig(tepl-6)

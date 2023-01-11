@@ -4,7 +4,7 @@
 #
 Name     : gedit
 Version  : 44.1
-Release  : 74
+Release  : 75
 URL      : https://download.gnome.org/sources/gedit/44/gedit-44.1.tar.xz
 Source0  : https://download.gnome.org/sources/gedit/44/gedit-44.1.tar.xz
 Summary  : No detailed summary available
